@@ -24,8 +24,7 @@
 
 
 ```
-    curl -sfL https://get.k3s.io | sh 
-```
+    curl -sfL https://get.k3s.io | sh ```
 
 <p>A kubeconfig file is written to /etc/rancher/k3s/k3s.yaml and the service is automatically started or restarted. The install script will install K3s and additional utilities, such as kubectl, crictl, k3s-killall.sh, and k3s-uninstall.sh, for example:</p>
 
