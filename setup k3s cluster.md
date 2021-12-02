@@ -23,9 +23,9 @@
 <p >To install k3s as a service, run:</p>
 
 
-
+```
     curl -sfL https://get.k3s.io | sh 
-
+```
 
 <p>A kubeconfig file is written to /etc/rancher/k3s/k3s.yaml and the service is automatically started or restarted. The install script will install K3s and additional utilities, such as kubectl, crictl, k3s-killall.sh, and k3s-uninstall.sh, for example:</p>
 
@@ -38,15 +38,15 @@
  <p><span style="color:blue"> To install on worker nodes, pass K3S_URL along with K3S_TOKEN or K3S_CLUSTER_SECRET environment variables, for example:</span></p>
 
  ### <p>For this create another vm and type follwing command</P>
-    
+ ```
     curl -sfL https://get.k3s.io | K3S_URL=https://myserver:6443 K3S_TOKEN=XXX sh -
-
+```
 ### Here my server means ip of your master and you have to paste your token in place of xxx which is available in /var/lib/rancher/k3s/server/node-token 
 
 <p>After that follow the command</p>
-
+```
     sudo kubectl get nodes 
-
+```
 <p>Then you will see one master and one worker like below </p>
 
 <span style="color:red">Refferences</span>
