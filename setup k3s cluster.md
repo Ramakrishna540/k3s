@@ -45,8 +45,7 @@
 <p>After that follow the command</p>
 ```
     sudo kubectl get nodes 
-    
-```
+```    
 <p>Then you will see one master and one worker like below </p>
 
 <span style="color:red">Refferences</span>
